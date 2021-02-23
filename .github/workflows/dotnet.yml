@@ -22,17 +22,17 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Publish
-      uses: brandedoutcast/publish-nuget@v2.5.2
+      uses: brandedoutcast/publish-nuget@v2.5.5
       with:
         PROJECT_FILE_PATH: Lexicon.WPF.MVVM.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
     - name: Publish
-      uses: brandedoutcast/publish-nuget@v2.5.2
+      uses: brandedoutcast/publish-nuget@v2.5.5
       with:
         PROJECT_FILE_PATH: Lexicon.WPF.Converters.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
     - name: Publish
-      uses: brandedoutcast/publish-nuget@v2.5.2
+      uses: brandedoutcast/publish-nuget@v2.5.5
       with:
         PROJECT_FILE_PATH: Lexicon.WPF.AttachableProperties.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
