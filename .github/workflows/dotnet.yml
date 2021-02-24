@@ -25,14 +25,17 @@ jobs:
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
         PROJECT_FILE_PATH: Lexicon.WPF.Converters/Lexicon.WPF.Converters.csproj
+        VERSION_REGEX: /^\s*<AssemblyVersion>(.*)<\/AssemblyVersion>\s*$/m
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
     - name: Publish
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
         PROJECT_FILE_PATH: Lexicon.WPF.AttachableProperties/Lexicon.WPF.AttachableProperties.csproj
+        VERSION_REGEX: /^\s*<AssemblyVersion>(.*)<\/AssemblyVersion>\s*$/m
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
     - name: Publish
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
         PROJECT_FILE_PATH: Lexicon.WPF.MVVM/Lexicon.WPF.MVVM.csproj
+        VERSION_REGEX: /^\s*<AssemblyVersion>(.*)<\/AssemblyVersion>\s*$/m
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
