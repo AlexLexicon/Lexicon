@@ -3,7 +3,14 @@
   <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <Version>2.0.1</Version>
+    <Version>2.0.2</Version>
+    <Authors>Alex Stroot</Authors>
+    <Description>A basic C# library of re-usable classes to assist MVVM pattern implementation for WPF.</Description>
+    <Copyright>2021</Copyright>
+    <PackageProjectUrl>https://github.com/AlexLexicon/Lexicon</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AlexLexicon/Lexicon</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageTags>WPF, MVVM</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

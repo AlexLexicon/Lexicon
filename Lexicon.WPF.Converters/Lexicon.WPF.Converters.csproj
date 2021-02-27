@@ -3,7 +3,14 @@
   <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
+    <Authors>Alex Stroot</Authors>
+    <Description>A basic C# library of converter classes to use for xaml WPF data binding.</Description>
+    <Copyright>2021</Copyright>
+    <PackageProjectUrl>https://github.com/AlexLexicon/Lexicon</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AlexLexicon/Lexicon</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
+    <PackageTags>WPF</PackageTags>
   </PropertyGroup>
 
 </Project>
