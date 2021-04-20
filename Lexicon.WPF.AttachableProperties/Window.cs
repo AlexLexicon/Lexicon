@@ -14,7 +14,10 @@ namespace Lexicon.WPF.AttachableProperties
                 if (args.NewValue is bool result)
                 {
                     if (result)
+                    {
                         window.Close();
+                        SetInvokeClose(window, false);
+                    }
                 }
             }
         }
