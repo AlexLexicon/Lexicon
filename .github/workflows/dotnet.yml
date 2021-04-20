@@ -29,10 +29,20 @@ jobs:
     - name: Publish
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
+        PROJECT_FILE_PATH: Lexicon.Xamarin.Converters/Lexicon.Xamarin.Converters.csproj
+        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+    - name: Publish
+      uses: brandedoutcast/publish-nuget@v2.5.5
+      with:
         PROJECT_FILE_PATH: Lexicon.WPF.AttachableProperties/Lexicon.WPF.AttachableProperties.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
     - name: Publish
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
         PROJECT_FILE_PATH: Lexicon.WPF.MVVM/Lexicon.WPF.MVVM.csproj
+        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+    - name: Publish
+      uses: brandedoutcast/publish-nuget@v2.5.5
+      with:
+        PROJECT_FILE_PATH: Lexicon.Xamarin.MVVM/Lexicon.Xamarin.MVVM.csproj
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
